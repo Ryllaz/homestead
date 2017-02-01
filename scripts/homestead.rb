@@ -39,6 +39,7 @@ class Homestead
       if settings.has_key?("gui") && settings["gui"]
           vb.gui = true
       end
+      vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
     end
 
     # Configure A Few VMware Settings
